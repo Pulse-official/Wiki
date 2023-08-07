@@ -1,3 +1,5 @@
+> TODO: Segment each section into seperate files in a folder, then summarize what files are the correct order for setting up a server in this fashion in one document.
+
 # Setting up a server on an empty Ubuntu Linux installation
 This documentation will go over how we can allow pages to display whilst allowing C# asp.net applications to run alongside it.
 
