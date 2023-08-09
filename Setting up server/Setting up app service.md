@@ -8,17 +8,17 @@ sudo nano /etc/systemd/system/YOURNAME.service
 Change up this config and paste it
 ```yaml
 [Unit]
-Description=The official Pulse web app
+Description=DESCRIPTION
 
 [Service]
-WorkingDirectory=/home/ubuntu/PulseWebsitePublish
-ExecStart=/usr/bin/dotnet /home/ubuntu/PulseWebsitePublish/PulseWebsite.dll
+WorkingDirectory=/home/ubuntu/FOLDER
+ExecStart=/usr/bin/dotnet --roll-forward LatestMajor /home/ubuntu/FOLDER/APP.dll
 Restart=always
 # Restart service after 10 seconds if the dotnet service crashes:
 RestartSec=10
 KillSignal=SIGINT
 SyslogIdentifier=dotnet-example
-User=www-data
+User=ubuntu
 Environment=ASPNETCORE_ENVIRONMENT=Development
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
 
