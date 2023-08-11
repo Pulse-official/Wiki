@@ -8,6 +8,10 @@ chmod +x ./dotnet-install.sh
 ./dotnet-install.sh --version latest
 ```
 
+```
+sudo apt install aspnetcore-runtime-6.0
+```
+
 2. Go to the asp.net project and add this to the ``appsettings.json`` file
 ```json
   "Kestrel": {
