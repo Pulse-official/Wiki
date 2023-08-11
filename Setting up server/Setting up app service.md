@@ -6,6 +6,7 @@ sudo nano /etc/systemd/system/YOURNAME.service
 ```
 
 Change up this config and paste it
+> NOTE - System.Net.Quic.QuicImplementationProviders was removed in .NET 7. If you get an exception about this not existing, dont roll forward.
 ```yaml
 [Unit]
 Description=DESCRIPTION
